@@ -19,6 +19,7 @@
 		//align-items: center;
 		max-width: 1200px;
 		padding: 0 $bsu;
+		min-height: 1200px;
 
 		.offline-logo {
 			position: relative;
@@ -37,7 +38,6 @@
 			max-width: 100px;
 			height: auto;
 			margin-left: -40px;
-			margin-bottom: 50px;
 
 			img {
 				max-width: 200px;
@@ -61,6 +61,14 @@
 	@include lg-down {
 		h1 {
 			font-size: $font-size-base * 2.4;
+		}
+	}
+	@include md-down {
+		& {
+			height: auto !important;
+		}
+		h3 {
+			font-size: 19px;
 		}
 	}
 }
