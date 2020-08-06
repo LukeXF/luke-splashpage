@@ -24,7 +24,7 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: 'Gatsby Template',
+                name: 'Luke J Brown - Developer and Entrepreneur',
                 short_name: 'gatsby-template',
                 start_url: '/',
                 background_color: '#111111',

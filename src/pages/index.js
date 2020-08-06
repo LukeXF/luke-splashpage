@@ -24,7 +24,7 @@ const Home = () => {
                     <p>
                         We pride ourselves on building bespoke, responsive and innovative solutions for clients in
                         all industries. To learn more please view <a href="https://elementsoftworks.co.uk/brochure">our
-                        brochure</a>. If you're interested in hiring me or my services then we charge £300-£400 per day
+                        brochure</a>. If you're interested in hiring me or my team then we charge £300-£400 per day
                         per person. We specialise in React.Js, Node.js, No SQL architecture.
                     </p>
                     <p>In the most recent years I have joined Skipper My Boat as the CTO to build a peer-to-peer global

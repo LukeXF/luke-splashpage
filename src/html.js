@@ -2,7 +2,7 @@ import React from 'react';
 
 export default class HTML extends React.Component {
     render() {
-        const title = 'Luke J Brown';
+        const title = 'Luke J Brown - Developer and Entrepreneur';
         const description = 'Full Stack JavaScript Developer and Business Owner in London/Ipswich, England.';
         const url = 'https://luke.sx';
         const twitterUsername = 'lukenxf';
