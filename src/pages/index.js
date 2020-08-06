@@ -23,7 +23,7 @@ const Home = () => {
                     </p>
                     <p>
                         We pride ourselves on building bespoke, responsive and innovative solutions for clients in
-                        all industries. To learn more please view <a href="https://elementsoftworks.co.uk/brochure">our
+                        all industries. To learn more please view <a href="https://elementsoftworks.co.uk/brochure.pdf">our
                         brochure</a>. If you're interested in hiring me or my team then we charge £300-£400 per day
                         per person. We specialise in React.Js, Node.js, No SQL architecture.
                     </p>
