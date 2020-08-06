@@ -2,52 +2,64 @@
 @import url('https://use.typekit.net/brz8anz.css');
 
 .offline {
-  height: 100vh;
-  overflow-y: auto;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+	height: 100vh;
+	overflow-y: auto;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 
-  .offline-content {
-    width: 100%;
-    display: inline-flex;
-    flex-direction: column;
-    flex-grow: 1;
-    justify-content: center;
-    //align-items: center;
-    max-width: 1200px;
-    padding: 0 $bsu;
+	.offline-content {
+		width: 100%;
+		display: inline-flex;
+		flex-direction: column;
+		flex-grow: 1;
+		justify-content: center;
+		//align-items: center;
+		max-width: 1200px;
+		padding: 0 $bsu;
 
-    .offline-logo {
-      position: relative;
-      max-width: 200px;
-      height: auto;
-      margin-bottom: $qsu;
+		.offline-logo {
+			position: relative;
+			max-width: 100px;
+			height: auto;
+			margin-bottom: $qsu;
 
-      svg {
-        margin-top: -100%;
-      }
-    }
+			img {
+				border-radius: 500px;
+				max-width: 100px;
+			}
+		}
 
-    h1 {
-      margin-bottom: $hsu;
-    }
-  }
+		.signature {
+			position: relative;
+			max-width: 100px;
+			height: auto;
+			margin-left: -40px;
 
-  footer {
-    flex-shrink: 1;
-    padding: $bsu;
-    max-width: 1200px;
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-  }
+			img {
+				max-width: 200px;
+			}
+		}
 
-  @include lg-down {
-    h1 {
-      font-size: $font-size-base * 2.4;
-    }
-  }
+		h1 {
+			margin-bottom: $hsu;
+		}
+	}
+
+	footer {
+		flex-shrink: 1;
+		padding: $bsu;
+		max-width: 1200px;
+		display: flex;
+		justify-content: flex-start;
+		width: 100%;
+	}
+
+	@include lg-down {
+		h1 {
+			font-size: $font-size-base * 2.4;
+		}
+	}
 }
