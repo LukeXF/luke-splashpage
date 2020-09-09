@@ -2,16 +2,16 @@
 	position: fixed;
 	z-index: 500;
 	width: 70%;
-	padding: 16px;
+	padding: 30px;
 	left: 15%;
-	top: 30%;
+	top: 15%;
 	box-sizing: border-box;
 	transition: all 0.3s ease-out;
 
 	background: #fff;
 	border-radius: .3rem;
-	-webkit-box-shadow: 0 0.06rem 0.25rem 0 rgba(60,65,80,.15);
-	box-shadow: 0 0.06rem 0.25rem 0 rgba(60,65,80,.15);
+	-webkit-box-shadow: 0 0.06rem 0.25rem 0 rgba(60, 65, 80, .15);
+	box-shadow: 0 0.06rem 0.25rem 0 rgba(60, 65, 80, .15);
 	margin-bottom: 20px;
 	-webkit-transition: all .3s ease-in-out;
 
@@ -38,23 +38,23 @@
 		}
 
 		.right {
-			float:right;
+			float: right;
 			text-align: right;
 			flex: 1;
 		}
 	}
 
 	&:hover {
-		-webkit-box-shadow: 0 0.06rem 0.25rem 0 rgba(60,65,80,.3);
-		box-shadow: 0 0.06rem 0.25rem 0 rgba(60,65,80,.3);
+		-webkit-box-shadow: 0 0.06rem 0.25rem 0 rgba(60, 65, 80, .3);
+		box-shadow: 0 0.06rem 0.25rem 0 rgba(60, 65, 80, .3);
 	}
 }
 
 
 @media (min-width: 600px) {
 	.Modal {
-		width: 500px;
-		left: calc(50% - 250px);
+		width: 1000px;
+		left: calc(50% - 500px);
 	}
 }
 
@@ -65,5 +65,79 @@
 	z-index: 100;
 	left: 0;
 	top: 0;
-	background-color: rgba(0,0,0,0.5);
+	display: block;
+	background-color: rgba(0, 0, 0, 0.4);
+
+	-webkit-animation: fadeInFromNone 0.3s ease-out;
+	-moz-animation: fadeInFromNone 0.3s ease-out;
+	-o-animation: fadeInFromNone 0.3s ease-out;
+	animation: fadeInFromNone 0.3s ease-out;
+}
+
+@-webkit-keyframes fadeInFromNone {
+	0% {
+		display: none;
+		opacity: 0;
+	}
+
+	1% {
+		display: block;
+		opacity: 0;
+	}
+
+	100% {
+		display: block;
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes fadeInFromNone {
+	0% {
+		display: none;
+		opacity: 0;
+	}
+
+	1% {
+		display: block;
+		opacity: 0;
+	}
+
+	100% {
+		display: block;
+		opacity: 1;
+	}
+}
+
+@-o-keyframes fadeInFromNone {
+	0% {
+		display: none;
+		opacity: 0;
+	}
+
+	1% {
+		display: block;
+		opacity: 0;
+	}
+
+	100% {
+		display: block;
+		opacity: 1;
+	}
+}
+
+@keyframes fadeInFromNone {
+	0% {
+		display: none;
+		opacity: 0;
+	}
+
+	1% {
+		display: block;
+		opacity: 0;
+	}
+
+	100% {
+		display: block;
+		opacity: 1;
+	}
 }
