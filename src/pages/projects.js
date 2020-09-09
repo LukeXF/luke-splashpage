@@ -5,8 +5,6 @@ import Card from '../components/Card';
 import projects from '../data/projects.json';
 
 const Home = () => {
-    console.log(projects);
-
     return (
         <Fragment>
             <div className={styles.main}>

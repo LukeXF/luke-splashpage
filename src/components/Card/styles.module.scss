@@ -1,11 +1,9 @@
-//@import '@component';
-
 .card {
 	background: #fff;
 	padding: 50px;
 	border-radius: .3rem;
-	-webkit-box-shadow: 0 0.06rem 0.25rem 0 rgba(60,65,80,.15);
-	box-shadow: 0 0.06rem 0.25rem 0 rgba(60,65,80,.15);
+	-webkit-box-shadow: 0 0.06rem 0.25rem 0 rgba(60, 65, 80, .15);
+	box-shadow: 0 0.06rem 0.25rem 0 rgba(60, 65, 80, .15);
 	margin-bottom: 20px;
 	width: 100%;
 	-webkit-transition: all .3s ease-in-out;
@@ -34,14 +32,14 @@
 		}
 
 		.right {
-			float:right;
+			float: right;
 			text-align: right;
 			flex: 1;
 		}
 	}
 
 	&:hover {
-		-webkit-box-shadow: 0 0.06rem 0.25rem 0 rgba(60,65,80,.3);
-		box-shadow: 0 0.06rem 0.25rem 0 rgba(60,65,80,.3);
+		-webkit-box-shadow: 0 0.06rem 0.25rem 0 rgba(60, 65, 80, .3);
+		box-shadow: 0 0.06rem 0.25rem 0 rgba(60, 65, 80, .3);
 	}
 }
