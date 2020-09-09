@@ -2,19 +2,17 @@ import React, { Fragment, useState } from 'react';
 import styles from './styles.module.scss';
 import ReactMarkdown from 'react-markdown';
 import LinesEllipsis from 'react-lines-ellipsis';
-import HTMLEllipsis from 'react-lines-ellipsis/lib/html';
-
 
 import Modal from '../Modal';
 import Button from '../Button';
 
-const Card = (project) => {
-    const [displayModal, setCount] = useState(false);
-    console.log({ displayModal });
+const Card = ({ project, display }) => {
+    const [displayModal, setDisplayModal] = useState(false);
+    // const displayClass = display === 'full' ? styles.cardDisplayFull : styles.cardDisplayGrid;
 
     const modalHandler = (e) => {
         e.preventDefault();
-        setCount(!displayModal);
+        setDisplayModal(!displayModal);
     };
 
     const displayHeader = () => (
@@ -39,16 +37,17 @@ const Card = (project) => {
     const displayText = (shorten) => (
         <Fragment>
             <div className={styles.cardText}>
-                {shorten && <LinesEllipsis text={project.text}/>}
+                {shorten && <LinesEllipsis text={project.text} maxLine='3'/>}
                 {!shorten && <ReactMarkdown source={project.text}/>}
             </div>
         </Fragment>
     );
 
     return (<div className={styles.card}>
+    {/*return (<div className={[styles.card, displayClass].join(' ')}>*/}
         {displayHeader()}
         {displayText(true)}
-        <Button onClick={() => setCount(true)}>Read More</Button>
+        <Button onClick={() => setDisplayModal(true)}>Read More</Button>
         <Modal show={displayModal} modalClosed={modalHandler}>
             {displayHeader()}
             {displayText()}

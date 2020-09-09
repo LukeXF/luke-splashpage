@@ -19,8 +19,24 @@
 		padding: 0 $bsu;
 		//min-height: 700px;
 
-		.main-padding {
+		.main-row {
 			padding: 100px 0;
+			display: grid;
+			grid-template-columns: 50% 50%;
+			margin: -15px;
+
+			-webkit-transition: all .3s ease-in-out;
+			transition: all .3s ease-in-out;
+
+			.main-col {
+				display: inline-block;
+				width: 100%;
+				padding: 0 15px;
+			}
+
+			&.full-row {
+				grid-template-columns: 100%;
+			}
 		}
 
 		.main-logo {

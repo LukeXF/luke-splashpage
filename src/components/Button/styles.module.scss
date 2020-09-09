@@ -13,10 +13,15 @@
 	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 
+	&.whiteBg {
+		background: white;
+	}
+
 	&:hover {
 		cursor: pointer;
 		color: white;
 		background: $colour-primary;
 		border-color: $colour-primary;
 	}
+
 }

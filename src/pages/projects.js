@@ -1,25 +1,39 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import '@styles/styles.scss';
 import styles from './styles.module.scss';
 import Card from '../components/Card';
+import Layout from '../components/Layout';
+import Button from '../components/Button';
 import projects from '../data/projects.json';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Home = () => {
+    const [displayMode, setDisplayMode] = useState('grid');
+    const displayClass = displayMode === 'full' ? styles.fullRow : null;
+
     return (
-        <Fragment>
+        <Layout>
+            <div>{displayMode}</div>
             <div className={styles.main}>
                 <div className={styles.mainContent}>
-                    <div className={styles.mainPadding}>
+                    <Button whiteBg onClick={() => setDisplayMode('grid')}>
+                        <FontAwesomeIcon icon={['fas', 'th-large']}/>
+                    </Button>
+                    <Button whiteBg onClick={() => setDisplayMode('full')}>
+                        <FontAwesomeIcon icon={['fas', 'align-justify']}/>
+                    </Button>
+                    <div className={[styles.mainRow, displayClass].join(' ')}>
                         {
                             projects.map((project) => {
-                                console.log(3, project.title);
-                                return <Card key={project.title} {...project}/>;
+                                return <div className={styles.mainCol}>
+                                    <Card key={project.title} display={displayMode} project={project}/>
+                                </div>;
                             })
                         }
                     </div>
                 </div>
             </div>
-        </Fragment>
+        </Layout>
     );
 };
 
