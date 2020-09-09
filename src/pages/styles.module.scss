@@ -1,16 +1,14 @@
 @import '@module';
 @import url('https://use.typekit.net/brz8anz.css');
 
-.offline {
-	height: 100vh;
-	overflow-y: auto;
+.main {
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 
-	.offline-content {
+	.main-content {
 		width: 100%;
 		display: inline-flex;
 		flex-direction: column;
@@ -21,7 +19,11 @@
 		padding: 0 $bsu;
 		//min-height: 700px;
 
-		.offline-logo {
+		.main-padding {
+			padding: 100px 0;
+		}
+
+		.main-logo {
 			position: relative;
 			max-width: 100px;
 			height: auto;
@@ -71,4 +73,10 @@
 			font-size: 19px;
 		}
 	}
+}
+
+.main-centered {
+	@extend .main;
+	height: 100vh;
+	overflow-y: auto;
 }

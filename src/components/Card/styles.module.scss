@@ -1,0 +1,47 @@
+//@import '@component';
+
+.card {
+	background: #fff;
+	padding: 50px;
+	border-radius: .3rem;
+	-webkit-box-shadow: 0 0.06rem 0.25rem 0 rgba(60,65,80,.15);
+	box-shadow: 0 0.06rem 0.25rem 0 rgba(60,65,80,.15);
+	margin-bottom: 20px;
+	width: 100%;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+
+	.card-title {
+		color: #222;
+	}
+
+	.card-text {
+		white-space: pre-line;
+		color: #5E5E5E;
+		margin-top: 20px;
+	}
+
+	h2, h3 {
+		font-size: 20px;
+		margin-bottom: 5px;
+	}
+
+	.card-wrapper {
+		display: flex;
+
+		.left {
+			flex: 0 0 65%;
+		}
+
+		.right {
+			float:right;
+			text-align: right;
+			flex: 1;
+		}
+	}
+
+	&:hover {
+		-webkit-box-shadow: 0 0.06rem 0.25rem 0 rgba(60,65,80,.3);
+		box-shadow: 0 0.06rem 0.25rem 0 rgba(60,65,80,.3);
+	}
+}

@@ -1,14 +1,13 @@
 import React, { Fragment } from 'react';
 import '@styles/styles.scss';
 import styles from './styles.module.scss';
-// import Logo from '@images/luke.png';
 
 const Home = () => {
     return (
         <Fragment>
-            <div className={styles.offline}>
-                <div className={styles.offlineContent}>
-                    <div className={styles.offlineLogo}>
+            <div className={styles.mainCentered}>
+                <div className={styles.mainContent}>
+                    <div className={styles.mainLogo}>
                         <img src="images/luke.png"/>
                     </div>
                     <h1>Luke J Brown</h1>

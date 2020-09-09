@@ -1,0 +1,18 @@
+[
+	{
+		"title": "React and RESTful API Developer",
+		"date": "Apr 2020 - Sep 2020",
+		"length": "6 Months Contract",
+		"company": "Merlin Panel",
+		"url": "https://app.merlinpanel.com",
+		"text": "I built Merlin Panel from scratch with one other developer based on designs and planning that we were solely responsible for. Merlin Panel is an all-in-one solution for businesses to manage their online presence. \n\nThis fully comprehensive platform can handle eCommerce (automated shipping prices, stock control, dynamic discounts), Website Editor (powered by Git), User Management, LiveChat, Network/DNS Management, Social Media Analytics/Management, Custom Form Creator and more.\n\nThe architecture consists of a large but simple Node/Express REST API powering the main React/Redux panel. Each individual client website is deployed via API > GitHub > Netlify. My MongoDB system allows for multiple databases to be accessed by the API seamlessly. The server-less client approach means the client websites cannot go down; scalability is a key focus on this architecture. \n\nEverything from monthly subscription billing and eCommerce (with autorize.net, Stripe and Braintree), to Pixel and SEO integration has been considered. For more context of this system see my documentation.\n"
+	},
+	{
+		"title": "MERN Developer",
+		"date": "Jan 2020 - Apr 2020",
+		"length": "3 Months Contract",
+		"company": "Element Softworks Ltd",
+		"url": "https://elementsoftworks.co.uk",
+		"text": "While also supporting my team on SkipperMyBoat where necessary, I developed a number of frontend websites with my colleague Joe (also a React contractor). All written in Gatsby.js (React/GraphQL) after being designed in AdobeXD by myself or someone on my team. These websites were eventually setup as Merlin Websites.\n\nazura.com - One page site with client system for a large wealth management company in Monaco/London.\nforgerelations.com - Marketing company located in South Carolina, includes animations and blog.\ngetlitvodka.com - A modern vodka company located in Georgia, includes dynamic cocktail system.\nretreateast.co.uk - Most notable - a large scale (45+) page website showcasing a luxury retreat company in Suffolk + Wedding sub-website recently added\n"
+	}
+]
