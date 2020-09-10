@@ -1,19 +1,17 @@
 import React, { Fragment } from 'react';
 import styles from './styles.module.scss';
-import Backdrop from './Backdrop';
 
-const modal = props => {
+const modal = ({ onClose, show, children }) => {
+    if (!show) return null;
+
     return (
         <Fragment>
-            <Backdrop show={props.show} clicked={props.modalClosed} />
             <div
-                className={styles.Modal}
-                style={{
-                    transform:props.show ? 'translateY(0)' : 'translateY(-100vh)',
-                    opacity : props.show ? 1 : 0
-                }}
-            >
-                {props.children}
+                className={styles.backdrop}
+                onClick={onClose}
+            />
+            <div className={styles.modal}>
+                {children}
             </div>
         </Fragment>
     );

@@ -1,4 +1,6 @@
-.Modal {
+@import '@module';
+
+.modal {
 	position: fixed;
 	z-index: 500;
 	width: 70%;
@@ -7,13 +9,16 @@
 	top: 15%;
 	box-sizing: border-box;
 	transition: all 0.3s ease-out;
+	transform: translateY(15vh);
 
 	background: #fff;
 	border-radius: .3rem;
-	-webkit-box-shadow: 0 0.06rem 0.25rem 0 rgba(60, 65, 80, .15);
 	box-shadow: 0 0.06rem 0.25rem 0 rgba(60, 65, 80, .15);
 	margin-bottom: 20px;
-	-webkit-transition: all .3s ease-in-out;
+	transform-origin: 50% 50%;
+
+	animation: openModal 0.3s $transition-decelerate forwards;
+
 
 	.modal-title {
 		color: #222;
@@ -58,7 +63,7 @@
 	}
 }
 
-.Backdrop {
+.backdrop {
 	width: 100%;
 	height: 100%;
 	position: fixed;
@@ -72,57 +77,6 @@
 	-moz-animation: fadeInFromNone 0.3s ease-out;
 	-o-animation: fadeInFromNone 0.3s ease-out;
 	animation: fadeInFromNone 0.3s ease-out;
-}
-
-@-webkit-keyframes fadeInFromNone {
-	0% {
-		display: none;
-		opacity: 0;
-	}
-
-	1% {
-		display: block;
-		opacity: 0;
-	}
-
-	100% {
-		display: block;
-		opacity: 1;
-	}
-}
-
-@-moz-keyframes fadeInFromNone {
-	0% {
-		display: none;
-		opacity: 0;
-	}
-
-	1% {
-		display: block;
-		opacity: 0;
-	}
-
-	100% {
-		display: block;
-		opacity: 1;
-	}
-}
-
-@-o-keyframes fadeInFromNone {
-	0% {
-		display: none;
-		opacity: 0;
-	}
-
-	1% {
-		display: block;
-		opacity: 0;
-	}
-
-	100% {
-		display: block;
-		opacity: 1;
-	}
 }
 
 @keyframes fadeInFromNone {
@@ -139,5 +93,18 @@
 	100% {
 		display: block;
 		opacity: 1;
+	}
+}
+
+
+@keyframes openModal {
+	0% {
+		transform: translateY(15vh) scale(0.96);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0vh) scale(1);
+		opacity: 100%;
 	}
 }

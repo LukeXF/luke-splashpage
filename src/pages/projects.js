@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Home = () => {
     const [displayMode, setDisplayMode] = useState('grid');
-    const displayClass = displayMode === 'full' ? styles.fullRow : null;
+    const displayClass = displayMode === 'full' ? styles.rowBlock : styles.rowInline;
 
     return (
         <Layout>
@@ -22,12 +22,14 @@ const Home = () => {
                     <Button whiteBg onClick={() => setDisplayMode('full')}>
                         <FontAwesomeIcon icon={['fas', 'align-justify']}/>
                     </Button>
-                    <div className={[styles.mainRow, displayClass].join(' ')}>
+                    <div className={`${styles.row} ${displayClass}`}>
                         {
-                            projects.map((project) => {
-                                return <div className={styles.mainCol}>
-                                    <Card key={project.title} display={displayMode} project={project}/>
-                                </div>;
+                            projects.map(project => {
+                                return (
+                                    <div className={styles.col} key={project.title}>
+                                        <Card {...project} displayMode={displayMode} />
+                                    </div>
+                                );
                             })
                         }
                     </div>
