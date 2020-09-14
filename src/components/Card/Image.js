@@ -1,17 +1,15 @@
 import React from 'react';
+import Img from 'gatsby-image';
 import styles from './styles.module.scss';
 
-const Image = (props) => (
-    <div className={styles.imageSlider}>
-        <div className={styles.image}>
-            <img  src={'https://images.unsplash.com/photo-1599713201276-6733c471d85a'} alt={'test'}/>
-
-        </div>
-        <div className={styles.image}>
-            <img  src={'https://images.unsplash.com/photo-1599713201276-6733c471d85a'} alt={'test'}/>
-
-        </div>
-        </div>
+const Image = ({ images, onClick }) => (
+    <div onClick={onClick} className={`${styles.imageSlider} ${images.length === 4 ? styles.imageSliderFour : ''}${images.length === 2 ? styles.imageSliderTwo : ''}`}>
+        {images?.map(image => (
+            <div className={styles.image}>
+                <Img fluid={image.childImageSharp.fluid} style={{ height: "100%" }} imgStyle={{ objectPosition: 'left' }}/>
+            </div>
+        ))}
+    </div>
 );
 
 export default Image;

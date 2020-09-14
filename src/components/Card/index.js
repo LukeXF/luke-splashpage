@@ -7,9 +7,9 @@ import Modal from '../Modal';
 import Button from '../Button';
 import Image from './Image';
 
-const Card = ({ title, date, text, url, company, displayMode }) => {
+const Card = ({ title, date, text, url, company, length, images, displayMode }) => {
     const [displayModal, setDisplayModal] = useState(false);
-    const [lineCount, setLineCount] = useState(3);
+    const [lineCount, setLineCount] = useState(2);
     const displayClass = displayMode === 'full' ? styles.cardRowBlock : styles.cardRowGrid;
     console.log({ displayMode });
 
@@ -17,13 +17,14 @@ const Card = ({ title, date, text, url, company, displayMode }) => {
         console.log('oh yes');
         setTimeout(
             () => {
+                console.log('updating line count', displayMode);
                 if (displayMode === 'full') {
-                    setLineCount(8);
+                    setLineCount(5);
                  } else {
                     setLineCount(3);
                 }
             },
-            300
+            400
         );
     }, [displayMode]);
 
@@ -38,14 +39,14 @@ const Card = ({ title, date, text, url, company, displayMode }) => {
                 <h2 className={styles.cardTitle}>{title}</h2>
                 <h3 className={styles.cardTitle && styles.right}>
                     {date}
-                    {length && ` (${length})`}
+                    {length && ` (${length})` || ''}
                 </h3>
             </div>
 
             <div className={styles.cardWrapper}>
                 <p className={styles.cardTitle}>{company}</p>
                 <p className={styles.cardTitle && styles.right}>
-                    <a href={url} target="_blank">{url}</a>
+                    {url && <a href={url} target="_blank">{url}</a> || '-'}
                 </p>
             </div>
         </Fragment>
@@ -61,7 +62,7 @@ const Card = ({ title, date, text, url, company, displayMode }) => {
     );
 
     return (<div className={`${styles.card} ${displayClass}`}>
-        <Image/>
+        <Image images={images} onClick={() => setDisplayModal(true)}/>
         <div className={styles.cardContent}>
             <Header/>
             <Text shorten/>

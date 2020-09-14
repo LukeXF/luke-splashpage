@@ -4,11 +4,12 @@
 	background: #f8f8f8;
 	border: 1px solid #ccc;
 	border-radius: .3rem;
-	display: block;
+	display: inline-block;
 	max-width: 300px;
 	width: fit-content;
 	padding: 8px 20px;
 	margin-top: 20px;
+	margin-right: 10px;
 
 	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;

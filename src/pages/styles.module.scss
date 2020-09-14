@@ -18,6 +18,14 @@
 		max-width: 1200px;
 		padding: 0 $bsu;
 		//min-height: 700px;
+		position: relative;
+
+		.button-content {
+			position: absolute;
+			right: 0;
+			margin-right: 20px;
+			top: 0;
+		}
 
 		.row {
 			padding: 100px 0;

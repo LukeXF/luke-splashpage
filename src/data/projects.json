@@ -5,7 +5,11 @@
 		"length": "6 Months Contract",
 		"company": "Merlin Panel",
 		"url": "https://app.merlinpanel.com",
-		"text": "I built Merlin Panel from scratch with one other developer based on designs and planning that we were solely responsible for. Merlin Panel is an all-in-one solution for businesses to manage their online presence. \n\nThis fully comprehensive platform can handle eCommerce (automated shipping prices, stock control, dynamic discounts), Website Editor (powered by Git), User Management, LiveChat, Network/DNS Management, Social Media Analytics/Management, Custom Form Creator and more.\n\nThe architecture consists of a large but simple Node/Express REST API powering the main React/Redux panel. Each individual client website is deployed via API > GitHub > Netlify. My MongoDB system allows for multiple databases to be accessed by the API seamlessly. The server-less client approach means the client websites cannot go down; scalability is a key focus on this architecture. \n\nEverything from monthly subscription billing and eCommerce (with autorize.net, Stripe and Braintree), to Pixel and SEO integration has been considered. For more context of this system see my [documentation](https://docs.merlinpanel.com).\n"
+		"text": "I built Merlin Panel from scratch with one other developer based on designs and planning that we were solely responsible for. Merlin Panel is an all-in-one solution for businesses to manage their online presence. \n\nThis fully comprehensive platform can handle eCommerce (automated shipping prices, stock control, dynamic discounts), Website Editor (powered by Git), User Management, LiveChat, Network/DNS Management, Social Media Analytics/Management, Custom Form Creator and more.\n\nThe architecture consists of a large but simple Node/Express REST API powering the main React/Redux panel. Each individual client website is deployed via API > GitHub > Netlify. My MongoDB system allows for multiple databases to be accessed by the API seamlessly. The server-less client approach means the client websites cannot go down; scalability is a key focus on this architecture. \n\nEverything from monthly subscription billing and eCommerce (with autorize.net, Stripe and Braintree), to Pixel and SEO integration has been considered. For more context of this system see my [documentation](https://docs.merlinpanel.com).\n",
+		"images": [
+			"merlin1.png",
+			"merlin-forms.png"
+		]
 	},
 	{
 		"title": "MERN Developer",
@@ -13,14 +17,94 @@
 		"length": "3 Months Contract",
 		"company": "Element Softworks Ltd",
 		"url": "https://elementsoftworks.co.uk",
-		"text": "While also supporting my team on SkipperMyBoat where necessary, I developed a number of frontend websites with my colleague Joe (also a React contractor). All written in Gatsby.js (React/GraphQL) after being designed in AdobeXD by myself or someone on my team. These websites were eventually setup as Merlin Websites.\n\n- [azura.com](https://azura.com) - One page site with client system for a large wealth management company in Monaco/London.\n-  [forgerelations.com](https://forgerelations.com) - Marketing company located in South Carolina, includes animations and blog.\n- [getlitvodka.com](https://getlitvodka.com) - A modern vodka company located in Georgia, includes dynamic cocktail system.\n- [retreateast.co.uk](https://retreateast.co.uk) - Most notable - a large scale (45+) page website showcasing a luxury retreat company in Suffolk + Wedding sub-website recently added\n"
+		"text": "While also supporting my team on SkipperMyBoat where necessary, I developed a number of frontend websites with my colleague Joe (also a React contractor). All written in Gatsby.js (React/GraphQL) after being designed in AdobeXD by myself or someone on my team. These websites were eventually setup as Merlin Websites.\n\n- [azura.com](https://azura.com) - One page site with client system for a large wealth management company in Monaco/London.\n-  [forgerelations.com](https://forgerelations.com) - Marketing company located in South Carolina, includes animations and blog.\n- [getlitvodka.com](https://getlitvodka.com) - A modern vodka company located in Georgia, includes dynamic cocktail system.\n- [retreateast.co.uk](https://retreateast.co.uk) - Most notable - a large scale (45+) page website showcasing a luxury retreat company in Suffolk + Wedding sub-website recently added\n",
+		"images": [
+			"azura-1.png",
+			"litvodka-1.png",
+			"retreateast-1.png",
+			"forge-1.png"
+		]
 	},
 	{
-		"title": "MERN2 Developer",
-		"date": "Jan 2020 - Apr 2020",
+		"title": "Node Developer with React work",
+		"date": "Oct 2019 - Dev 2020",
 		"length": "3 Months Contract",
-		"company": "Element Softworks Ltd",
-		"url": "https://elementsoftworks.co.uk",
-		"text": "While also supporting my team on SkipperMyBoat where necessary, I developed a number of frontend websites with my colleague Joe (also a React contractor). All written in Gatsby.js (React/GraphQL) after being designed in AdobeXD by myself or someone on my team. These websites were eventually setup as Merlin Websites.\n\n- [azura.com](https://azura.com) - One page site with client system for a large wealth management company in Monaco/London.\n-  [forgerelations.com](https://forgerelations.com) - Marketing company located in South Carolina, includes animations and blog.\n- [getlitvodka.com](https://getlitvodka.com) - A modern vodka company located in Georgia, includes dynamic cocktail system.\n- [retreateast.co.uk](https://retreateast.co.uk) - Most notable - a large scale (45+) page website showcasing a luxury retreat company in Suffolk + Wedding sub-website recently added\n"
+		"company": "Forge Relations LLC (Gundies Awards)",
+		"url": "https://thegundies.com",
+		"text": "The Gundies Awards is an annual, community-driven voting platform, to vote for favourite influencers in the firearm industry. In its first year, the project was sponsored by Sig Sauer and 9 other large US companies.\n\nMy most scaleable architecture to date. The responsive server-less React.js website allowed loading to thousands of users at once with no concern for CPU overload. The Node API, which powers the website, handled over 2 million database writes and 12 million cached database reads to our multi-cluster MongoDB database. \n\nThroughout December 2019. The domain was loaded 2.048 million times, 85,000 users signed up, and 313,000 votes were counted across 256 registered influencers and 336,000 active sessions.",
+		"images": [
+			"gundies-1.png",
+			"gundies-2.png"
+		]
+	},
+	{
+		"title": "React/React Native/Node Lead",
+		"date": "Oct 2018 - Oct 2019",
+		"length": "12 Months Contract",
+		"company": "Skipper My Boat LLC",
+		"url": "https://skippermyboat.com",
+		"text": "In this second stage of work, after receiving more funding, I increased the dev team to three and we began rebuilding the MVP into a full system. Over the course of a year we built a React Native app (Expo) to the Android and iOS store utilising web views powered via the main site as much as possible, plus docs.\n\nThe API was decoupled from the frontend and a JWT auth system (RFC 7519) was built by myself. All collections were stored in a sharded MongoDB server. The frontend was rebuilt using React/Redux and built off of an Ant Design CSS framework. I also created an internal admin portal in React/Redux as well.\n\nThe latest stages involves QA Automation such as Mocha/Chai CircleCI reports on Git pull requests and Jest/Percy tests in React. The system was completed to a stage where it is sustainable for me to project manage weekly while working on other contracts as members of my team still work on SMB.",
+		"images": [
+			"skipper-1.png",
+			"skipper-2.png",
+			"skipper-3.png",
+			"skipper-4.png"
+		]
+	},
+	{
+		"title": "Vue/Node/React Native Developer",
+		"date": " Aug 2018 - Oct 2018",
+		"length": "3 Months Contract",
+		"company": "Temmt LLC and Talkable Network",
+		"url": "",
+		"text": "As the SkipperMyBoat team awaited more funding, I focused on working on other contracts. I worked part-time on Temmt, a UK based deals app (to find discounts on shops as you walk through town); Talkable, a search platform to find medical professional in your local area covered under your chosen insurance.\n\nTemmt’s Admin Panel was written in Vue and Bootstrap. The mobile app was built in React Native and Expo. The frontend website was a FullPage.js sliding design built in React. All powered by Google’s Firebase.\n\nTalkable was written in Vue.js, SCSS and powered via a Firebase realtime Database with Firebase functions for server side processing of data. It was completed as an MVP, awaiting investment from VC funders.",
+		"images": [
+			"talkable-1.png",
+			"temmt-1.png"
+		]
+	},
+	{
+		"title": "JavaScript and Node MVP Developer",
+		"date": "Oct 2017 - Aug 2018",
+		"length": "10 Months Contract",
+		"company": "Skipper My Boat LLC",
+		"url": "https://skippermyboat.com",
+		"text": "After successfully working on a number of projects since 2012 (both full-time and then part-time while working at SETL/Playtech), I decided to join SkipperMyBoat, a tech startup located in Austin, Texas.\n\nI was initially hired to improve the UX/UI of an existing prototype, but after 1 month of improvements it was quickly established that a new MVP was needed. I was given a £20,000 budget to build and MVP to showcase to investors in three months. \n\nI hired another developer to assist me on developing the MVP. Together we built a website powered in Node, SCSS, Bootstrap, Express and MongoDB. This allowed SMB to secure $120,000 in funding to further progress the company over the next 6 months. By August we had onboarded 15,000 boats on the platform.",
+		"images": [
+			"skipper-5.png"
+		]
+	},
+	{
+		"title": "Software Developer",
+		"date": "Jun 2017 - Oct 2017",
+		"length": "5 Months",
+		"company": "SETL Limited",
+		"url": "https://setl.io",
+		"text": "I joined SETL (a Blockchain-based tech company) to build innovative and bespoke platforms in the financial industry. SETL pride themselves on offering enterprise-grade, fast, secure and permissioned distributed ledger technology (DLT) for financial applications and infrastructure.\n\nThe company had received a large amount of funding and allowed a team of 4 web developers (including myself) to research and investigate which JS framework to use. We spent many weeks learning and building business cases for React, Vue, Angular 2 and Polymer. Ultimately my Angular solution was decided upon to be the best fit for their company due the strongly typed nature (TypeScript) and highly structured way of coding.\n\nMy work was split into two sections, building an internal staff portal system to mange the company, and also building the Blockchain enterprise solution sold to many governments and companies around the world, such as Orange, Citi, Deloitte and the Delaware government. Both written in Angular and Node.",
+		"images": [
+			"setl-1.png"
+		]
+	},
+	{
+		"title": "Front End Developer (PHP/JS)",
+		"date": "Sep 2015 - Jun 2017",
+		"length": "1 Year, 10 Months",
+		"company": "Playtech PLC",
+		"url": "https://playtech.com",
+		"text": "Playtech, a FTSE 250 company with over 5000 employees, hired me after seeing my freelance experience and the work I did for my company. They are the world’s largest white-label online gambling and sports betting software provider, I joined to help build upon their Virtual Racing and Sports Systems. \n\nThe main focus was on large-scale enhancements to the web, retail and mobile solution, combining the three into one modular solution. This involved PHP, jQuery, Bootstrap and in the last year React/Redux.\n\nBy Christmas 2015, implementation of a new responsive mobile viewer that I had developed, saw Playtech's income generate an extra £40,000 a month. \n\nIn 2016, I had completely taken over development of the Virtual Sports Event Viewer, a key component that allowed Playtech to secure clients such as Ladbrooks, Coral, Betfair and PaddyPower. \n\nI also have produced two full large-scale football league applications for Coral as part of a £4 million deal between Playtech and Coral. First version went live to around 1,000 Coral shops summer 2016. Second version was being deployed as I left.\n",
+		"images": [
+			"playtech-1.png"
+		]
+	},
+	{
+		"title": "Freelance Developer/DevOps",
+		"date": "April 2012 - Mar 2015",
+		"length": "3 Years",
+		"company": "Luke Brown Development",
+		"url": "https://luke.sx",
+		"text": "After finishing Duke of Yorks I set up my own hosting company focusing on automating the DevOps process for many companies across North America and Europe.\n\nQuickly I was recognised and recommended as a system administrator from business to business; there was a growing need to work with each company's Java developers to produce the web version to the games and servers. Due to that, there was the opportunity to up-sell my skills by offering web development alongside DevOps. I spent many months learning web based languages such as PHP, HTML, CSS, JS, JSON, MySQL and jQuery.\n\nBetween 2014 and 2016 I sold my server hosting company (in gradual parts) to a US-based competitor so that I could focus more on dedicated web development work.",
+		"images": [
+			"merlin1.png"
+		]
 	}
 ]

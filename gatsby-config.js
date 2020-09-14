@@ -12,12 +12,22 @@ module.exports = {
         authorLink: 'https://github.com/element-softworks',
     },
     plugins: [
+
+        'gatsby-plugin-sharp',
+        'gatsby-transformer-sharp',
         'gatsby-plugin-react-helmet',
         {
             resolve: 'gatsby-source-filesystem',
             options: {
                 path: `${__dirname}/src/pages`,
                 name: 'pages',
+            },
+        },
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                path: `${__dirname}/src/images`,
+                name: 'images',
             },
         },
         'gatsby-plugin-remove-trailing-slashes',
@@ -31,6 +41,13 @@ module.exports = {
                 theme_color: '#111111',
                 display: 'standalone',
                 icon: './static/images/favicon/android-chrome-512x512.png',
+            },
+        },
+        `gatsby-transformer-json`,
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                path: `./src/data/`,
             },
         },
         {

@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
     faLocationArrow as faLightLocationArrow,
@@ -13,7 +13,6 @@ library.add(faLightLocationArrow, faAlignJustify, faThLarge);
 const modal = props => {
     return (
         <div className={`app`}>
-            <div>LAYOUT</div>
             {props.children}
         </div>
     );
