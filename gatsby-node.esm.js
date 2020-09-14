@@ -20,22 +20,16 @@ const slash = require('slash');
 export const createSchemaCustomization = ({ actions, schema }) => {
     const { createTypes, createFieldExtension } = actions;
 
-    console.log("HELP");
-
     createFieldExtension({
         name: 'fileByMerlinPath',
         extend: () => ({
             resolve: (src, args, context, info) => {
                 const partialPath = src[info.fieldName];
 
-                console.log('Joe', partialPath);
-                if (!partialPath) {
-                    return null;
-                }
+                if (!partialPath) return null;
 
                 if (Array.isArray(partialPath)) {
                     return partialPath.map(partialPath => {
-                        console.log("yeah boi", partialPath);
                         const filePath = slash(path.resolve(__dirname, './src/images', partialPath));
                         const fileNode = context.nodeModel.runQuery({
                             firstOnly: true,
