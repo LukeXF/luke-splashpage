@@ -11,7 +11,6 @@ const Card = ({ title, date, text, url, company, length, images, displayMode }) 
     const [displayModal, setDisplayModal] = useState(false);
     const [lineCount, setLineCount] = useState(2);
     const displayClass = displayMode === 'full' ? styles.cardRowBlock : styles.cardRowGrid;
-    console.log({ displayMode });
 
     useEffect(() => {
         console.log('oh yes');

@@ -16,6 +16,7 @@
 	box-shadow: 0 0.06rem 0.25rem 0 rgba(60, 65, 80, .15);
 	margin-bottom: 20px;
 	transform-origin: 50% 50%;
+	opacity: 1 !important;
 
 	animation: openModal 0.3s $transition-decelerate forwards;
 

@@ -27,6 +27,14 @@
 			top: 0;
 		}
 
+		@include md-down {
+			padding: 50px 0;
+
+			.button-content {
+				display: none;
+			}
+		}
+
 		.row {
 			padding: 100px 0;
 			//display: grid;
@@ -51,6 +59,16 @@
 			.col {
 				padding: 0 15px;
 				transition: width $transition-accelerate .2s;
+			}
+
+			@include md-down {
+				&.row-inline {
+					margin: 0;
+					padding: 0;
+					.col {
+						width: 100%;
+					}
+				}
 			}
 		}
 

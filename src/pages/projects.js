@@ -13,7 +13,6 @@ const Home = ({ data: { allProjectsJson: { edges: data } } }) => {
     const displayClass = displayMode === 'full' ? styles.rowBlock : styles.rowInline;
     const projects = data.map(item => item.node);
 
-    console.log({data});
     return (
         <Layout>
             <div className={styles.main}>

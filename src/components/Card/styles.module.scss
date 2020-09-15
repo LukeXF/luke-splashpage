@@ -104,9 +104,11 @@
 
 				}
 			}
+
 			&.image-slider-four {
 				flex-wrap: wrap !important;
 				flex-direction: row;
+
 				.image {
 					width: 50% !important;
 				}
@@ -116,6 +118,7 @@
 
 	&.card-row-grid {
 		flex-direction: column;
+
 		.image-slider {
 			flex-direction: row;
 
@@ -126,8 +129,10 @@
 					height: auto;
 				}
 			}
+
 			&.image-slider-four {
 				flex-wrap: wrap !important;
+
 				.image {
 					width: 50% !important;
 				}
@@ -141,6 +146,7 @@
 				}
 			}
 		}
+
 		.card-wrapper {
 			display: block;
 
