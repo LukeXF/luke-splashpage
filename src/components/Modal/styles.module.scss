@@ -18,6 +18,13 @@
 	transform-origin: 50% 50%;
 	opacity: 1 !important;
 
+
+	@include md-down {
+		width: 90%;
+		left: 5%;
+		top: 5%;
+	}
+
 	animation: openModal 0.3s $transition-decelerate forwards;
 
 
